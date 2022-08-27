@@ -16,87 +16,94 @@
   </head>
   <body>
     <div class="container">
-      <div class="choose-city">
-        <div class="row">
-          <form id="input-form">
-             
-            <button
-              class="btn heading-btn col-4"
-              type="submit"
-              id="current-location-btn"
-            > Current Location
-            </button>
-            
-            <input type="text"
-            placeholder="Type your city" 
-            class= "btn heading-btn col-4"
-            id="user-city">
-           
-            <button
-              class="btn heading-btn col-4"
-              type="submit"
-              id="search-btn"
+      <div class="app-weather-wrapper">
+        <div class="choose-city">
+          <div class="row">
+            <form id="input-form">
+              <button
+                class="btn heading-btn col-4"
+                type="submit"
+                id="current-location-btn"
+              >
+                Current Location
+              </button>
+
+              <input
+                type="text"
+                placeholder="Type your city"
+                class="btn heading-btn col-4"
+                id="user-city"
+              />
+
+              <button
+                class="btn heading-btn col-4"
+                type="submit"
+                id="search-btn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <h1>Athens</h1>
+
+        <h2></h2>
+
+        <div class="row" id="weather-now">
+          <div class="col data" id="data-today">25/07</div>
+          <div class="col emodji"id="emodji">☀️</div>
+          <div class="col temptoday"id="temptoday"> <span id="Celsius">℃</span> | <span id="Farenheit"></span> ℉</div>
+        </div>
+
+        <div class="future-weather">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                26/07 <br />
+                ☀️
+                <strong> 38℃</strong>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                27/07 <br />
+                ☀️
+                <strong> 38℃</strong>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                28/07 <br />
+                ☀️☀️
+                <strong> 40℃</strong>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                29/07 <br />
+                ☀️
+                <strong> 36℃</strong>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                30/07 <br />
+                ⛈️
+                <strong> 31℃</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <h5>
+            <a href="https://animated-wisp-966ef0.netlify.app/" class="link"
+              >Open-source code</a
             >
-              Search
-            </button>
-          
-          </form>
-        </div>
-      </div>
-
-      <h1>Athens</h1>
-      
-      <h2></h2>
-
-      <div class="row" id="weather-now">
-        <div class="col data" id = "data-today">25/07</div>
-        <div class="col emodji">☀️</div>
-        <div class="col temptoday">38℃</div>
-      </div>
-
-      <div class="future-weather">
-      <div class="row">
-        <div class="col">
-          <div class="card">
-            26/07 <br />
-            ☀️
-            <strong> 38℃</strong>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            27/07 <br />
-            ☀️
-            <strong> 38℃</strong>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            28/07 <br />
-            ☀️☀️
-            <strong> 40℃</strong>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            29/07 <br />
-            ☀️
-            <strong> 36℃</strong>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            30/07 <br />
-            ⛈️
-            <strong> 31℃</strong>
-          </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <h5><a href="https://animated-wisp-966ef0.netlify.app/" class="link">Open-source code</a>
-        by Emma Aksonova</h5>
+            by Emma Aksonova
+          </h5>
     </div>
+</div>
     <script src="src/app.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-.container {
+.app-weather-wrapper {
   margin: 20px auto;
   padding: 10px 30px;
   size: auto;
@@ -52,13 +52,14 @@ h2 {
 .data {
   text-align: center;
   padding: 10px 15px;
+  font-size: 14px;
 }
 
 .temptoday,
 .data {
   border: thin solid black;
   border-radius: 10px;
-  margin: 0 60px;
+  margin: 0 50px;
   background-color: azure;
 }
 
