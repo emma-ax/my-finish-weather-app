@@ -1,33 +1,77 @@
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.container {
+  margin: 20px auto;
+  padding: 10px 30px;
+  size: auto;
+  background-color: peachpuff;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
 
-.weather-app {
-  max-width: 600px;
-  padding: 20px;
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-}
-
-h1 {
-  text-align: center;
-  color: red;
-  font-weight: 100;
-  line-height: 50px;
-  margin: 0;
-}
-
-h2 {
-  text-align: center;
-  color: green;
-  font-size: 20px;
-  padding: 0;
-}
 #input-form {
   display: flex;
   width: 100%;
 }
 
-#weather-now {
+.heading-btn {
+  display: flex;
+  margin: 20px auto;
+  padding: 0 auto;
+  border: 1px solid #272343;
+  border-radius: 10px;
+  width: auto;
+  background-color: white;
+}
+
+#current-location-btn {
+  background-color: #272343;
+  color: whitesmoke;
+}
+#search-btn {
+  background-color: whitesmoke;
+  color: #272343;
+}
+
+h1 {
+  margin: 20px;
   text-align: center;
+  color: rgb(94, 93, 95);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(94, 93, 95);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.temptoday,
+.emodji,
+.data {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.temptoday,
+.data {
+  border: thin solid black;
+  border-radius: 10px;
+  margin: 0 60px;
+  background-color: azure;
+}
+
+.card {
+  margin: 20px auto;
+  padding: 0 auto;
+  text-align: center;
+  border-color: #272343;
+}
+.future-weather {
+  margin: 20px auto;
+  border-top: 1px solid black;
+}
+h5 {
+  font-size: 15px;
 }
