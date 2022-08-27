@@ -1,33 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-search-app</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="weather-app">
-            <h1>Athens</h1>
-            <div class="row" id="weather-now">
-            <div class="col data" id = "data-today">25/07</div>
-            <div class="col emodji">☀️</div>
-            <div class="col temptoday">38℃|°F</div>
+      <div class="weather-app">
+        <div class="choose-city">
+          <div class="row">
+            <form id="input-form">
+              <button
+                class="btn heading-btn col-4"
+                type="submit"
+                id="current-location-btn"
+              >
+                Current Location
+              </button>
+
+              <input
+                type="text"
+                placeholder="Type your city"
+                class="btn heading-btn col-4"
+                id="user-city"
+              />
+
+              <button
+                type="submit"
+                class="btn heading-btn col-4"
+                id="search-btn"
+              >
+                Search
+              </button>
+            </form>
+          </div>
         </div>
+
+        <h1>Athens</h1>
+
+        <h2>Sat,14.00</h2>
+
+        <div class="row" id="weather-now">
+          <div class="col data" id="data-today">25/07</div>
+          <div class="col emodji">☀️</div>
+          <div class="col temptoday">38℃|℉</div>
+        </div>
+
         <div class="row" id="parameters">
-            <ul>
-                <li>Humidity:20%</li>
-                <li> Wind:10m/s;</li>
-            </ul>
+          <ul>
+            <li>Humidity:20%</li>
+            <li>Wind:10m/s;</li>
+          </ul>
         </div>
+      </div>
+      <small
+        ><a href="https://animated-wisp-966ef0.netlify.app/" class="link"
+          >Open-source code</a
+        >
+        by Emma Aksonova</small
+      >
     </div>
-    <small><a href="https://animated-wisp-966ef0.netlify.app/" class="link">Open-source code</a>
-        by Emma Aksonova</small>
-</div>
-<script src="src/app.js"></script>
-</body>
+    <script src="src/app.js"></script>
+  </body>
 </html>
