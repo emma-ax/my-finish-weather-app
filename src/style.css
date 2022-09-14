@@ -2,6 +2,7 @@
   margin: 20px auto;
   padding: 10px 30px;
   size: auto;
+  border-radius: 10px;
   background-color: peachpuff;
   background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
