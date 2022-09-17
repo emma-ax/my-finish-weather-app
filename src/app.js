@@ -4,11 +4,12 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
-
+  let dayElement = document.querySelector("#day-today");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = response.data.wind.speed;
+  dayElement.innerHTML = response.data.wind.speed;
 }
 
 let apiKey = "38f4ffb4599af28a6348dacfb33c46b5";
