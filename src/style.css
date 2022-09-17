@@ -60,7 +60,7 @@ li {
 }
 .temp-today,
 .emodji,
-.data {
+.day {
   text-align: center;
   padding: 10px 15px;
   font-size: 14px;
@@ -85,7 +85,7 @@ li {
   border-top: 1px solid black;
 }
 
-#parameters{
+#parameters {
   text-align: center;
 }
 
