@@ -46,26 +46,32 @@
           </div>
         </div>
 
-        <h1 id="city">Athens</h1>
+        <h1 id="city"></h1>
 
         <h2></h2>
 
         <div class="row" id="weather-now">
           <div class="col day" id="day-today">25/07</div>
-          <div class="col emodji" id="emodji">☀️</div>
-          <div class="d-flex weather-temperature col temp-today">
-            <div>
-              <span id="temperature"></span><span class="units">°C</span>
+          <div class="col icon">
+            <img
+              src="https://www.iconpacks.net/icons/2/free-sun-icon-1846-thumb.png"
+              id="icon"
+              alt="Clear"
+              />
+          </div>
+            <div class="d-flex weather-temperature col temp-today">
+              <div class="tempdata" >
+                <span id="temperature"></span><span class="units">°C</span>
+              </div>
             </div>
           </div>
-        </div>
-          
-        <div class="row" id="parameters">
+
+          <div class="row" id="parameters">
             <ul>
-                <li> Humidity: <span id="humidity"></span></li>
-                <li> Wind <span id="wind"></span></li>
+              <li>Humidity: <span id="humidity"></span></li>
+              <li>Wind <span id="wind"></span></li>
             </ul>
-        </div>
+          </div>
 
           <div class="future-weather">
             <div class="row">

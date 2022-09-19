@@ -58,14 +58,21 @@ li {
   text-transform: capitalize;
   color: black;
 }
-.temp-today,
-.emodji,
+.tempdata,
 .day {
   text-align: center;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
+.icon {
+  text-align: center;
+  padding: 0px 0px;
+}
+
+#icon {
+  height: 60px;
+}
 .temp-today,
 .day {
   border: thin solid black;
