@@ -62,7 +62,8 @@ li {
 .day {
   text-align: center;
   padding: 10px 15px;
-  font-size: 18px;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .icon {
@@ -98,4 +99,13 @@ li {
 
 h5 {
   font-size: 15px;
+}
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.tempdata .active:hover {
+  text-decoration: none;
 }
