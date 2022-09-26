@@ -87,6 +87,7 @@ li {
   padding: 0 auto;
   text-align: center;
   border-color: #272343;
+  background-color: azure;
 }
 .future-weather {
   margin: 20px auto;
@@ -108,4 +109,19 @@ h5 {
 
 .tempdata .active:hover {
   text-decoration: none;
+}
+.icon-forecast {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.forecast-temp {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.forecast-temp-min {
+  opacity: 0.6;
 }
