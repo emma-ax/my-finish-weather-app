@@ -11,6 +11,35 @@ function displayDay(daynumber) {
   }
   return `${day}/${month}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let dates = ["28/05", "29/05", "30/05", "31/05", "01/06"];
+
+  let forecastHTML = `<div class = "row">`;
+  dates.forEach(function (date) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col">
+      <div class="card">
+      <div class="forecast-date">26/07</div>
+       <div class="icon-forecast"><img
+        src="http://openweathermap.org/img/wn/50d@2x.png"
+        alt=""
+        width="45"
+        />
+        <div class="forecast-temp">
+        <span class="forecast-temp-max">28℃</span>
+        <span class="forecast-temp-min">24℃</span>
+      </div>
+    </div>
+  </div>
+</div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -73,3 +102,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 search("Milan");
+displayForecast();
